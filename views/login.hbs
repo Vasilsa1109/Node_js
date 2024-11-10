@@ -1,0 +1,12 @@
+<body>
+    <h1>{{title}}</h1>
+    <form id="loginForm" onsubmit="return validatePassword2()">
+        <label for="email">Логин (email):</label>
+        <input type="email" required>
+        <label for="password">Пароль:</label>
+        <input type="password" class="password" required>
+        <div id="errorMessage" style="color: rgb(144, 0, 0);"></div> 
+        <button type="submit">Войти</button>
+        <button type="button" onclick="clearForm()">Очистить форму</button>
+    </form>
+</body>

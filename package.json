@@ -1,0 +1,43 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "nodejs project-app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devstart": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vasilsa1109/Node_js.git"
+  },
+  "keywords": [
+    "nodejs",
+    "app"
+  ],
+  "author": "Vasilisa V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasilsa1109/Node_js/issues"
+  },
+  "homepage": "https://github.com/Vasilsa1109/Node_js",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.1",
+    "hbs": "^4.2.0",
+    "mysql2": "^3.11.4",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

@@ -1,0 +1,31 @@
+
+<form action="/registration" id="form" onsubmit="return validatePassword()" method="post">
+        <label for="file">
+            <img src="/" alt="Upload Image" >
+        </label>
+        <div id="imagePreview"></div>
+        <input type="file" id="file" name="file" accept="image/*" required style="display: none;" onchange="previewImage(event)">
+            
+        <b>Name</b>
+        <input type="text" required>
+        <br><br>
+        
+        <b>Surname</b>
+        <input type="text" required>
+        <br><br>
+        
+        <b>Date of Birth</b>
+        <input type="date" required>
+        <br><br>
+        
+        <b>Password</b>
+        <div id="error-message" style="color: rgb(144, 0, 0);"></div> 
+        <input type="password" required class="password">
+        
+        <b>Rewrite Password</b>
+        <div id="error2" style="color: rgb(144, 0, 0);"></div> 
+        <input type="password" required id="pass2">
+        
+        <input type="submit" value="Отправить" id="check">
+</form>
+

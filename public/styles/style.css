@@ -1,0 +1,58 @@
+body{
+    background: rgb(211, 243, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* Идеальная структура styles: 
+index.css - основные стили, главные для приложения
+Сброс CSS стилей -  Reset CSS
+css для каждой страницы  */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(124, 192, 255);
+    background: skyblue;
+    flex-direction: column;
+    gap: 30px;
+    font-size: x-large;
+    padding: 30px;
+}
+#check{
+   background-color: rgb(213, 255, 255); 
+   color: rgb(26, 58, 86);
+   font-size: 20px;
+   border: 3px solid rgb(26, 58, 86);
+   border-radius: 10px;
+}
+img{
+    background-color: rgb(86, 158, 186);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 5px solid rgb(126, 167, 204);
+}
+button{
+    background-color: rgb(88, 137, 192);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1{
+    background-color: rgb(187, 218, 230) ;
+}
