@@ -1,12 +1,13 @@
 
 function validatePassword(password){
-    const passwordValid = "RegExp";
+    const passwordValid = "/^(?=.*\d)(?=.*[A-Z])[A-Za-z\d]{8,}$/";
     if(!password.match(passwordValid))
         if(!password.match(passwordValid)){
             return('Пароль должен содержать минимум 8 символов, включая 1 заглавную букву и 1 цифру.');
         }
     return null;
 }
+
 module.exports = validatePassword;
 
 // ; function validatePassword2() {

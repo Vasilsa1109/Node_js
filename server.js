@@ -89,9 +89,31 @@ app.get('/login', (req, res) => {
     });
   })
 
-// app.use((req, res, next) => {
-//     res.status(404).render('404', {title: '404 - Page'})
-// })
+  app.post('/registration', (req, res) => { 
+    const { username, password, email, birthdate, photo } = req.body; 
+    if (username && password && email) { 
+        console.log(`User registered successfully! Username: ${username}`);
+        return res.redirect('/');
+    }
+    else { 
+        return res.status(400).send('Registration failed. Missing required fields.'); 
+    }
+});
+
+app.use((req, res, next) => {
+  res.status(404).render('404', { title: '404 - Page Not Found' });
+});
+
+
+const sequelize = require('./config/db.config');
+
+sequelize.sync() 
+  .then(() => { 
+    console.log('Database & tables created!'); 
+  }) 
+  .catch((err) => { 
+    console.error('Error creating database:', err); 
+  });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
@@ -99,4 +121,3 @@ app.listen(PORT, ()=>{
         `Server running at http://localhost:${PORT}`
     );
 });
-
