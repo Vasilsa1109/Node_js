@@ -1,9 +1,16 @@
 body{
-    background: rgb(211, 243, 255);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    width: 100%;
+    height: 100%;
 }
 /* Идеальная структура styles: 
 index.css - основные стили, главные для приложения
@@ -14,36 +21,41 @@ form{
     justify-content: center;
     align-items: center;
     border: 3px solid rgb(124, 192, 255);
-    background: skyblue;
+    background: rgb(40, 84, 102);
     flex-direction: column;
     gap: 30px;
     font-size: x-large;
     padding: 30px;
+    border-radius: 10px;
 }
 #check{
    background-color: rgb(213, 255, 255); 
-   color: rgb(26, 58, 86);
+   color: rgb(48, 96, 138);
    font-size: 20px;
    border: 3px solid rgb(26, 58, 86);
    border-radius: 10px;
 }
 img{
-    background-color: rgb(86, 158, 186);
+    background-color: rgb(64, 112, 132);
     aspect-ratio: 1/1;
     object-fit: cover;
     border: 5px solid rgb(126, 167, 204);
 }
 button{
-    background-color: rgb(88, 137, 192);
+    background-color: rgb(110, 158, 210);
     color: aliceblue;
     padding: 5px;
     border-radius: 10px;
+    border: 2px solid rgb(27, 53, 82);
 }
 
 nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(76, 67, 125);
+    border-radius: 20px;
+    padding: 10px;
 }
 nav a{
     text-decoration: none;
@@ -54,5 +66,16 @@ nav a{
 }
 
 h1{
-    background-color: rgb(187, 218, 230) ;
+    background-color: rgb(197, 210, 215) ;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+footer p{
+    font-weight: 900;
+    font-style: italic;
+    font-variation-settings:
+      "wdth" 100;
+      background-color: azure;
+      padding: 15px;
 }
