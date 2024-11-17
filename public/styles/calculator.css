@@ -5,17 +5,18 @@
     background: #222522;
     overflow: hidden;
 }
-form input {
-  width: 800px;
+form{
+  width: 600px;
   height: 300px;
-  border: none;
-  border-radius: 12px;
+  background-color: #222522;
+  border: 3px solid black;
+}
+form input {
+  width: 600px;
+  height: 300px;
   font-size: 2rem;
-  padding: 1rem;
   color: #fff;
   background: #000;
-  text-align: right;
-  pointer-events: none;
 }
 .button {
   display: flex;

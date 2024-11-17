@@ -11,6 +11,8 @@ body{
     "wdth" 100;
     width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 /* Идеальная структура styles: 
 index.css - основные стили, главные для приложения
@@ -27,6 +29,7 @@ form{
     font-size: x-large;
     padding: 30px;
     border-radius: 10px;
+    width: 100%;
 }
 #check{
    background-color: rgb(213, 255, 255); 
@@ -78,4 +81,6 @@ footer p{
       "wdth" 100;
       background-color: azure;
       padding: 15px;
+      position: fixed;
+      bottom: 0;
 }

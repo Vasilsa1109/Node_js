@@ -1,5 +1,5 @@
 body{
-  --s: 75px; /* control the size */
+  --s: 100px; 
   
   --_c: #0000, #fff 1deg 79deg, #0000 81deg;
   --g0: conic-gradient(from 140deg at 50% 87.5%, var(--_c));
