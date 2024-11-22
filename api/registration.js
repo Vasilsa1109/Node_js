@@ -1,10 +1,11 @@
 //Post_axios
 axios.post('/registration', {
-  name: '',
-  surname: '',
+  id: ' ',
+  username: '',
   birthday: '',
   password: '',
-  rewritedPassword: '',
+  email: ' ',
+  photo: ' '
 })
 .then((response) => {
   console.log(response);
@@ -44,11 +45,12 @@ axios.post('/registration', {
 //Get_axios
 
 const params = {
-  name: '',
-  surname: '',
-  dateOfbirth: '',
+  id: ' ',
+  username: '',
+  birthday: '',
   password: '',
-  rewritedPassword: ''
+  email: ' ',
+  photo: ' '
 };
 
 axios.get('https://api.example.com/', {params});
@@ -56,11 +58,12 @@ axios.get('https://api.example.com/', {params});
 
 //Fetch_Post
 let login = {
-  name: '',
-  surname: '',
-  dateOfbirth: '',
+  id: ' ',
+  username: '',
+  birthday: '',
   password: '',
-  rewritedPassword: ''
+  email: ' ',
+  photo: ' '
 };
 
 let response = await fetch('/article/fetch/post/user', {
@@ -88,11 +91,12 @@ fetch('https:://example.com/ajax.php')
 
 const https = require('https');
 const data = JSON.stringify ({
-  name: '',
-  surname: '',
-  dateOfbirth: '',
+  id: ' ',
+  username: '',
+  birthday: '',
   password: '',
-  rewritedPassword: ''
+  email: ' ',
+  photo: ' '
 });
 const options = {
   hostname: 'flaviocopes.com',
@@ -121,11 +125,12 @@ req.end()
 
 const https = require('https');
 const data2 = JSON.stringify ({
-  name: '',
-  surname: '',
-  dateOfbirth: '',
+  id: ' ',
+  username: '',
+  birthday: '',
   password: '',
-  rewritedPassword: ''
+  email: ' ',
+  photo: ' '
 });
 const options2 = {
   hostname: 'flaviocopes.com',
